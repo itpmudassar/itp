@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoTech Plaza - Empowering Tomorrow's Technology Today</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h2>InfoTech Plaza</h2>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__actions">
+                <button class="btn btn--primary" onclick="scrollToContact()">Get Started</button>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">InfoTech Plaza</h1>
+                    <p class="hero__subtitle">Empowering Tomorrow's Technology Today</p>
+                    <p class="hero__description">A leading IT startup providing comprehensive technology solutions to businesses worldwide with cutting-edge innovation and professional excellence.</p>
+                    <div class="hero__actions">
+                        <button class="btn btn--primary btn--lg" onclick="scrollToSection('#services')">Our Services</button>
+                        <button class="btn btn--outline btn--lg" onclick="scrollToContact()">Contact Us</button>
+                    </div>
+                </div>
+                <div class="hero__visual">
+                    <div class="hero__geometric">
+                        <div class="geometric-shape shape-1"></div>
+                        <div class="geometric-shape shape-2"></div>
+                        <div class="geometric-shape shape-3"></div>
+                        <div class="geometric-shape shape-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section__header">
+                <h2>Our Services</h2>
+                <p>Comprehensive IT solutions tailored to your business needs</p>
+            </div>
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="service__title">Web Development</h3>
+                    <p class="service__description">Modern, responsive websites and web applications built with cutting-edge technologies for optimal performance.</p>
+                    <button class="btn btn--primary btn--sm service__btn">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3 class="service__title">Web Designing</h3>
+                    <p class="service__description">Creative UI/UX design solutions that deliver exceptional user experiences and drive business growth.</p>
+                    <button class="btn btn--primary btn--sm service__btn">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-bug"></i>
+                    </div>
+                    <h3 class="service__title">Software Testing</h3>
+                    <p class="service__description">Comprehensive quality assurance and testing services to ensure flawless software performance and reliability.</p>
+                    <button class="btn btn--primary btn--sm service__btn">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="service__title">Customer Support</h3>
+                    <p class="service__description">24/7 technical support services to keep your business running smoothly with expert assistance.</p>
+                    <button class="btn btn--primary btn--sm service__btn">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="service__title">BPO Services</h3>
+                    <p class="service__description">Efficient business process outsourcing solutions to streamline your operations and reduce costs.</p>
+                    <button class="btn btn--primary btn--sm service__btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__content">
+                <div class="about__text">
+                    <h2>About InfoTech Plaza</h2>
+                    <p class="about__lead">A leading IT startup providing comprehensive technology solutions to businesses worldwide with cutting-edge innovation and professional excellence.</p>
+                    <p>At InfoTech Plaza, we believe in empowering tomorrow's technology today. Our team of skilled professionals brings years of industry experience to deliver exceptional results that drive business growth and digital transformation.</p>
+                    
+                    <div class="stats__grid">
+                        <div class="stat-item">
+                            <div class="stat__number" data-target="500">0</div>
+                            <div class="stat__label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat__number" data-target="200">0</div>
+                            <div class="stat__label">Happy Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat__number" data-target="5">0</div>
+                            <div class="stat__label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat__number" data-target="50">0</div>
+                            <div class="stat__label">Team Members</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section__header">
+                <h2>Why Choose InfoTech Plaza?</h2>
+                <p>We deliver excellence through our commitment to quality and innovation</p>
+            </div>
+            <div class="features__grid">
+                <div class="feature-card">
+                    <div class="feature__icon">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3 class="feature__title">Expert Team</h3>
+                    <p class="feature__description">Skilled professionals with years of industry experience and cutting-edge technical expertise.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature__icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h3 class="feature__title">24/7 Support</h3>
+                    <p class="feature__description">Round-the-clock customer support for all your technical needs and business requirements.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature__icon">
+                        <i class="fa-solid fa-shield-check"></i>
+                    </div>
+                    <h3 class="feature__title">Quality Assurance</h3>
+                    <p class="feature__description">Rigorous testing and quality control processes to ensure exceptional results every time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section__header">
+                <h2>Get In Touch</h2>
+                <p>Ready to transform your business with our technology solutions? Let's discuss your needs</p>
+            </div>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <div class="contact-item">
+                        <div class="contact__icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact__details">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact__icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact__details">
+                            <h4>Email</h4>
+                            <p>info@infotechplaza.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact__icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact__details">
+                            <h4>Address</h4>
+                            <p>123 Tech Street, Digital City, TC 12345</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact__form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Service Interest</label>
+                        <select class="form-control" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="web-design">Web Designing</option>
+                            <option value="software-testing">Software Testing</option>
+                            <option value="customer-support">Customer Support</option>
+                            <option value="bpo-services">BPO Services</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>InfoTech Plaza</h3>
+                    <p>Empowering Tomorrow's Technology Today</p>
+                    <div class="footer__social">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Web Development</a></li>
+                            <li><a href="#services">Web Designing</a></li>
+                            <li><a href="#services">Software Testing</a></li>
+                            <li><a href="#services">Customer Support</a></li>
+                            <li><a href="#services">BPO Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li>info@infotechplaza.com</li>
+                            <li>+1 (555) 123-4567</li>
+                            <li>123 Tech Street<br>Digital City, TC 12345</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 InfoTech Plaza. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
